@@ -79,8 +79,15 @@ Built the complete MVP from scratch:
 - [x] Works fully offline
 - [x] Zero network requests (verified)
 
+### GitHub & Hosting
+- **GitHub Repo:** https://github.com/moncada-julian/doom-journal
+- **Landing Page:** https://moncada-julian.github.io/doom-journal/
+- **Privacy Policy URL:** https://moncada-julian.github.io/doom-journal/privacy.html
+
 ### Chrome Web Store Status
 - [x] Developer account created ($5 fee paid)
+- [x] GitHub repo created (public)
+- [x] GitHub Pages enabled with landing page and privacy policy
 - [ ] Screenshots needed
 - [ ] ZIP file upload
 - [ ] Store listing (description, etc.)
@@ -147,12 +154,12 @@ doom_journal/
   - Privacy policy URL (need to host PRIVACY.md publicly)
 - [ ] Submit for review (usually 1-3 days)
 
-**2. Create public GitHub repository**
-- Initialize git repo
-- Create GitHub repo (public)
-- Push code
-- Update README with proper install instructions (both manual and Web Store link once published)
-- Use raw GitHub URL for PRIVACY.md as privacy policy URL for Web Store
+**2. Create public GitHub repository** ✅ DONE
+- [x] Initialize git repo
+- [x] Create GitHub repo (public): https://github.com/moncada-julian/doom-journal
+- [x] Push code
+- [x] GitHub Pages enabled with landing page and privacy policy
+- [x] Privacy policy URL: https://moncada-julian.github.io/doom-journal/privacy.html
 
 **3. Explore screenshot automation tools**
 - Look into Playwright, Puppeteer, or similar for taking extension screenshots programmatically
@@ -223,4 +230,4 @@ In `blocked.js`:
 
 ---
 
-*Last updated: January 18, 2026 — All features complete. Chrome Web Store developer account created. Next: screenshots, ZIP upload, and GitHub repo.*
+*Last updated: January 20, 2026 — GitHub repo created and GitHub Pages enabled. Next: screenshots, ZIP upload, and Chrome Web Store submission.*
