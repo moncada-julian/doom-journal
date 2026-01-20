@@ -1,1 +1,11 @@
+# Claude notes (personal)
 CLAUDE_NOTES.md
+
+# macOS
+.DS_Store
+
+# Build artifacts
+*.zip
+
+# Screenshot mockups (not actual images)
+screenshots/
