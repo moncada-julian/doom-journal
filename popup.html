@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doom Journal</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">doom journal</h1>
+      <label class="toggle">
+        <input type="checkbox" id="enableToggle" checked>
+        <span class="toggle-slider"></span>
+      </label>
+    </header>
+
+    <!-- Pass Timer -->
+    <div id="passTimer" class="pass-timer hidden">
+      <span class="pass-label">pass expires in</span>
+      <span id="passCountdown" class="pass-countdown">--:--</span>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value" id="totalEntries">0</span>
+        <span class="stat-label">entries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="totalTime">0m</span>
+        <span class="stat-label">written</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="currentStreak">0</span>
+        <span class="stat-label">day streak</span>
+      </div>
+    </div>
+
+    <!-- Recent Entries -->
+    <div class="section">
+      <h2 class="section-title">recent entries</h2>
+      <div id="entriesList" class="entries-list">
+        <p class="empty-state">no entries yet</p>
+      </div>
+    </div>
+
+    <!-- Export Buttons -->
+    <div class="export-buttons">
+      <button id="exportMd" class="btn btn-primary">Export as Markdown</button>
+      <button id="exportJson" class="btn btn-secondary">Export as JSON</button>
+    </div>
+
+    <!-- Settings -->
+    <div class="section">
+      <h2 class="section-title">settings</h2>
+      <div class="setting-row">
+        <span class="setting-label">Pass duration</span>
+        <select id="passDuration" class="select">
+          <option value="1">1 min</option>
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+          <option value="30">30 min</option>
+          <option value="45" selected>45 min</option>
+          <option value="60">60 min</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Your entries never leave your device.</p>
+      <p>No accounts. No tracking. Just you and your thoughts.</p>
+    </footer>
+  </div>
+
+  <!-- Disable Confirmation Modal -->
+  <div id="disableModal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <h2 class="modal-title">are you sure?</h2>
+      <p class="modal-text">You might end up doom scrolling more than you'd like.</p>
+      <p class="modal-instruction">Type "<span class="confirm-phrase">yes i want to doom scroll</span>" to confirm:</p>
+      <input type="text" id="confirmInput" class="confirm-input" placeholder="type here..." autocomplete="off">
+      <div class="modal-buttons">
+        <button id="cancelDisable" class="btn btn-secondary">Cancel</button>
+        <button id="confirmDisable" class="btn btn-danger" disabled>Disable</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

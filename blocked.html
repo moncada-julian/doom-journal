@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doom Journal</title>
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Duration Selection Screen -->
+    <div id="selectScreen" class="screen">
+      <h1 class="title">doom journal</h1>
+      <p class="subtitle">write before you scroll</p>
+
+      <div class="duration-buttons">
+        <button class="duration-btn" data-duration="60">1 min</button>
+        <button class="duration-btn" data-duration="180">3 min</button>
+        <button class="duration-btn" data-duration="300">5 min</button>
+      </div>
+
+      <p class="hint">select a duration to begin</p>
+    </div>
+
+    <!-- Writing Screen -->
+    <div id="writeScreen" class="screen hidden">
+      <button id="newEntryBtn" class="new-entry-btn">+ new entry</button>
+      <div class="timer-display">
+        <span id="timerMinutes">0</span>:<span id="timerSeconds">00</span>
+      </div>
+
+      <textarea
+        id="journalInput"
+        placeholder="start typing..."
+        autocomplete="off"
+        autofocus
+      ></textarea>
+
+      <div id="pauseOverlay" class="pause-overlay hidden">
+        <div class="pause-title">timer paused</div>
+        <div id="nudgeMessage">keep writing...</div>
+      </div>
+
+      <div class="bottom-bar">
+        <span id="wordCount">0 words</span>
+        <span class="value-prop">free · private · persistent</span>
+      </div>
+    </div>
+
+    <!-- Completion Screen -->
+    <div id="completeScreen" class="screen hidden">
+      <div class="complete-content">
+        <h2 id="completeMessage">nice. enjoy your scroll.</h2>
+        <p class="redirect-notice">redirecting in <span id="redirectCountdown">2</span>...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="blocked.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Doom Journal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    .back-link {
+      color: #888;
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+
+    .back-link:hover {
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 1.125rem;
+    }
+
+    .tldr {
+      background: #1a2a1a;
+      border: 1px solid #2a3a2a;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 48px;
+    }
+
+    .tldr h2 {
+      color: #afa;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .tldr p {
+      color: #8a8;
+      font-size: 1.125rem;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #333;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #ccc;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+      color: #ccc;
+    }
+
+    ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #666;
+    }
+
+    .highlight {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+
+    .highlight p {
+      margin-bottom: 0;
+    }
+
+    code {
+      background: #2a2a2a;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      color: #e0e0e0;
+    }
+
+    ol {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    ol li {
+      padding: 4px 0;
+      color: #ccc;
+    }
+
+    .permissions-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+
+    .permissions-table th,
+    .permissions-table td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #333;
+    }
+
+    .permissions-table th {
+      color: #fff;
+      font-weight: 600;
+      background: #1a1a1a;
+    }
+
+    .permissions-table td {
+      color: #ccc;
+    }
+
+    .permissions-table code {
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 48px;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="back-link">&larr; Back to Doom Journal</a>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Last updated: January 2025</p>
+    </header>
+
+    <div class="tldr">
+      <h2>TL;DR</h2>
+      <p>Doom Journal collects nothing. Your entries are yours. Zero network requests. Everything stays on your device.</p>
+    </div>
+
+    <section>
+      <h2>Data Collection</h2>
+      <p><strong>We collect nothing.</strong> Zero. Zilch. Nada.</p>
+      <ul>
+        <li>No analytics</li>
+        <li>No tracking pixels</li>
+        <li>No usage metrics</li>
+        <li>No error reporting</li>
+        <li>No network requests whatsoever</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data Storage</h2>
+      <p>All your journal entries are stored locally in your browser using <code>chrome.storage.local</code>. This data:</p>
+      <ul>
+        <li>Never leaves your device</li>
+        <li>Is not synced to any cloud service</li>
+        <li>Is not accessible to us or anyone else</li>
+        <li>Persists until you clear your browser data or uninstall the extension</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Network Activity</h2>
+      <p>This extension makes <strong>zero network requests</strong>. You can verify this yourself:</p>
+      <ol>
+        <li>Open Chrome DevTools (F12)</li>
+        <li>Go to the Network tab</li>
+        <li>Use the extension normally</li>
+        <li>Observe: nothing. No requests. Ever.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <p>We request only the minimum permissions necessary:</p>
+      <table class="permissions-table">
+        <tr>
+          <th>Permission</th>
+          <th>Why We Need It</th>
+        </tr>
+        <tr>
+          <td><code>webNavigation</code></td>
+          <td>To detect when you're navigating to Twitter/X</td>
+        </tr>
+        <tr>
+          <td><code>storage</code></td>
+          <td>To save your journal entries locally</td>
+        </tr>
+        <tr>
+          <td>Host permissions for <code>twitter.com</code> and <code>x.com</code></td>
+          <td>To intercept navigation to these specific sites</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Your Data, Your Control</h2>
+      <ul>
+        <li><strong>Export anytime</strong> — Download all your entries as Markdown or JSON</li>
+        <li><strong>Delete anytime</strong> — Uninstall the extension or clear browser data</li>
+        <li><strong>No account required</strong> — Nothing to sign up for, nothing to cancel</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third Parties</h2>
+      <p>We do not share any data with third parties because we do not collect any data. There is nothing to share.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>If we ever change this policy, we will update this page with a new "Last updated" date. Given our commitment to privacy, any changes would only ever make this policy more protective, not less.</p>
+    </section>
+
+    <section>
+      <h2>Open Source</h2>
+      <p>Don't take our word for it. The entire source code is open and available for inspection. You can verify every claim in this policy by reading the code yourself.</p>
+      <div class="highlight">
+        <p><a href="https://github.com/moncada-julian/doom-journal" style="color: #88f;">View the source code on GitHub</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions or concerns? Open an issue on our GitHub repository.</p>
+    </section>
+
+    <footer>
+      <p><a href="index.html">Doom Journal</a> · <a href="https://github.com/moncada-julian/doom-journal">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
